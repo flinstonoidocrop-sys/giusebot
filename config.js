@@ -13,25 +13,25 @@ const moduleCache = new NodeCache({ stdTTL: 300 });
 
 /*⭑⭒━━━✦❘༻☾⋆⁺₊✧ 𝓿𝓪𝓻𝓮𝓫𝓸𝓽 ✧₊⁺⋆☽༺❘✦━━━⭒⭑*/
 
-global.sam = ['393476686131',]
+global.sam = ['393780439468',]
 global.owner = [
-  ['393476686131', 'sam', true],
-  ['393511082922', 'gio', true],
-  ['393392645292', 'mavko', true],
-  ['67078163216', 'Felix', true],
-  ['393514357738', 'vare', true],
+  ['393780439468', 'giuse', true],
+  ['393701330693', 'blood', true],
+  ['', '', true],
+  ['', '', true],
+  ['', '', true],
 ]
 global.mods = ['393476686131', '393511082922', '67078163216']
 global.prems = ['393476686131', '393511082922', '67078163216']
 
 /*⭑⭒━━━✦❘༻🩸 INFO BOT 🕊️༺❘✦━━━⭒⭑*/
 
-global.nomepack = 'vare ✧ bot'
-global.nomebot = '✧˚🩸 varebot 🕊️˚✧'
+global.nomepack = 'manipolarebot'
+global.nomebot = '✧˚🩸 manipolarebot 🕊️˚✧'
 global.wm = 'vare ✧ bot'
-global.autore = '𝐬𝐚𝐦'
-global.dev = '⋆｡˚- 𝐬𝐚𝐦'
-global.testobot = `༻⋆⁺₊𝓿𝓪𝓻𝓮𝓫𝓸𝓽₊⁺⋆༺`
+global.autore = 'giuse'
+global.dev = '⋆｡˚- giuse'
+global.testobot = `༻⋆⁺₊manipolarebot₊⁺⋆༺`
 global.versione = pkg.version
 global.errore = '⚠️ *Errore inatteso!* Usa il comando `.segnala _errore_` per avvisare lo sviluppatore.'
 
