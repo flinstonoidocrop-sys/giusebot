@@ -418,7 +418,7 @@ async function connectSubBots() {
                             keys: makeCacheableSignalKeyStore(subState.keys, logger),
                         },
                     });
-                   
+
                     subConn.ev.on('creds.update', subSaveCreds);
                     subConn.ev.on('connection.update', connectionUpdate);
                     return subConn;
@@ -509,7 +509,7 @@ global.reload = async (_ev, filename) => {
                 return delete global.plugins[filename];
             }
         } else conn.logger.info(`🆕 NUOVO PLUGIN RILEVATO: '${filename}'`);
-        
+
         try {
             const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`));
             global.plugins[filename] = module.default || module;
@@ -586,11 +586,11 @@ function purgeSession(sessionDir, cleanPreKeys = false) {
             const filePath = path.join(sessionDir, file);
             const stats = statSync(filePath);
             const fileAge = (Date.now() - stats.mtimeMs) / (1000 * 60 * 60 * 24);
-            
+
             if (file === 'creds.json') {
                 return;
             }
-            
+
             if (file.startsWith('pre-key') && cleanPreKeys) {
                 if (fileAge > 1) {  // cancella pre-key solo se hanno più di 1 giorno e non sono state modificate di recente (per non riempire la memoria yk)
                     try {
@@ -620,7 +620,7 @@ function purgeSession(sessionDir, cleanPreKeys = false) {
             message += `\n┃  🔑 ${preKeyDeletedCount} pre-key vecchie (>7 giorni) rimosse`;
         }
         message += `\n╰⭑⭒━━━✦❘༻☾⋆⁺₊🗑️ 𝓿𝓪𝓻𝓮𝓫𝓸𝓽 ♻️₊⁺⋆☽༺❘✦━━━⭒⭑`;
-        
+
         if (deletedCount > 0) {
             console.log(message);
         } else {
